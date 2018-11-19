@@ -74,6 +74,8 @@ a{text-decoration:none; outline:none;}
     background:#fff;
     width:6.4rem;
     margin:0 0 0.1rem 0;
+    overflow: hidden;
+    position:relative;
 }
 .logo{
     width:6.4rem;
@@ -95,8 +97,34 @@ a{text-decoration:none; outline:none;}
 .logo img:nth-of-type(1){
     margin:0.04rem 0 0 0.17rem;
 }
-.top>img{
+.lunbo>img{
     width:6.4rem;
+    float:left;
+    height:2.85rem;
+}
+.lunbo{
+    width:900%;
+    position:absolute;
+    left:-100%;
+}
+.banner_index{
+    position:absolute;
+    bottom:0.2rem;
+    width:3.48rem;
+    height:0.12rem;
+    left:50%;
+    margin:0 0 0 -1.74rem;
+}
+.banner_index li{
+    width:0.12rem;
+    height:0.12rem;
+    border-radius:50%;
+    background:rgba(255,255,255,0.5);
+    margin:0 0.05rem;
+    float:left;
+}
+.banner_index .current{
+    background:rgba(255,255,255,1);
 }
 .logo-text{
     width:6.4rem;
@@ -107,6 +135,7 @@ a{text-decoration:none; outline:none;}
     font-weight:bolder;
     font-size:0.2rem;
     align-items:center;
+    margin-top:2.85rem;
     justify-content:space-around;
 }
 .logo-text div{

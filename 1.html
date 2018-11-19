@@ -16,7 +16,27 @@
 				  <span>|</span>
 				  <img src="img/logo_02.png" alt="">
 			 </div>
-			 <img src="img/index/index-pic_02.jpg" alt="">
+			 <div class='lunbo'>
+			 	  <img src="img/index/index-pic_36.jpg" alt="">
+			 	  <img src="img/index/index-pic_02.jpg" alt="">
+			 	  <img src="img/index/index-pic_19.jpg" alt="">
+			 	  <img src="img/index/index-pic_23.jpg" alt="">
+			 	  <img src="img/index/index-pic_27.jpg" alt="">
+			 	  <img src="img/index/index-pic_30.jpg" alt="">
+			 	  <img src="img/index/index-pic_33.jpg" alt="">
+			 	  <img src="img/index/index-pic_36.jpg" alt="">
+			 	  <img src="img/index/index-pic_02.jpg" alt="">
+			 </div>
+			 <ul class="banner_index">
+                     <li class='current' index='1'></li>
+                     <li index='2'></li>
+                     <li index='3'></li>
+                     <li index='4'></li>
+                     <li index='5'></li>
+                     <li index='6'></li>
+                     <li index='7'></li>
+                     <li index='8'></li>
+             </ul>
 			 <div class='logo-text'>
 					<div>
 						<img src="img/index/index-bg_05.png" alt="">
@@ -156,5 +176,139 @@
 		var html=document.documentElement;
 		var width=html.getBoundingClientRect().width;
 		html.style.fontSize=width/6.4+'px';
+		!(function(a,img,c,d,e,f,g,width,price){
+		    var navlist=document.getElementsByClassName(a)[0];
+		    var navlist_box=document.getElementsByClassName(img)[0];
+		    var navlist_dot=document.getElementsByClassName(c)[0];
+		    var navlist_dot_div=navlist_dot.getElementsByTagName(d);
+		    var screen_width = document.body.offsetWidth;
+		    var x=-100;
+		    var index=0;
+		    var time=setInterval(fun,3000);
+		    function fun(){
+		        if(x==-width){
+		            x=0;
+		            navlist_box.style.transition='0s all ease';
+		            navlist_box.style.left=x+'%';
+		            setTimeout(function(){
+		                x=-100;
+		                index=0;
+		                fun1()
+		                navlist_dot_div[index].className=g;
+		                navlist_box.style.transition='0.3s all ease';
+		                navlist_box.style.left=x+'%';
+		            },10)
+		        }else{
+		            x-=100;
+		            if(index==price){
+		                index=price;
+		            }else{
+		                index+=1;
+		            }
+		            fun1()
+		            navlist_dot_div[index].className=g;
+		            navlist_box.style.transition='0.3s all ease';
+		            navlist_box.style.left=x+'%';
+		        }
+		    }
+		    function fun1(){
+		        for(var j=0;j<navlist_dot_div.length;j++){
+		            navlist_dot_div[j].className='';
+		        }
+		    }
+		    for(var i=0;i<navlist_dot_div.length;i++){
+		        navlist_dot_div[i].onclick=function(){
+		            var navlist_dot_index=this.getAttribute('index');
+		            index=navlist_dot_index-1;
+		            fun1()
+		            this.className=g;
+		            x=navlist_dot_index*-100;   
+		            navlist_box.style.transition='0.3s all ease';
+		            navlist_box.style.left=x+'%';   
+		        }
+		    }
+		        var startX = 0;
+		        var moveX = 0;
+		        var navlist_box_left=0;
+		        // 记录 distanceX：从移动到开始的距离
+		        var distanceX = 0;
+		        navlist_box.addEventListener('touchstart',function (event) {
+		        // 关闭定时器
+		        clearInterval(time);
+		        // 关闭过渡效果
+		        navlist_box.style.transition = '';
+		        // 记录开始值
+		        startX = event.touches[0].clientX;
+		    })
+
+		    // 触摸中
+		    navlist_box.addEventListener('touchmove',function (event) {
+		        // 计算移动的值
+		        moveX = event.touches[0].clientX - startX;
+		        if(moveX>-320&&moveX<320){
+		            navlist_box.style.marginLeft=moveX+'px';
+		        }
+		    })
+		    navlist_box.addEventListener('touchend',function (event) {
+		        // 定义 最大的 偏移值
+		        var maxDistance = screen_width/3;
+
+		      
+		        if(Math.abs(moveX)>maxDistance){
+		            navlist_box.style.margin=0+'px';
+		            if (moveX>=0) {
+		                x+=100;
+		                navlist_box.style.transition = 'all 0.3s';
+		                navlist_box.style.left = x+'%';
+		                if(index==0){
+		                    index=price;
+		                    fun1()
+		                    navlist_dot_div[index].className=g;
+		                }else{
+		                    index-=1;
+		                    fun1()
+		                    navlist_dot_div[index].className=g;
+		                }
+		                setTimeout(function(){
+		                    if(x==0){
+		                        x=-width;
+		                        navlist_box.style.transition='0s all ease';
+		                        navlist_box.style.left=x+'%';  
+		                        index=price;
+		                        fun1()
+		                        navlist_dot_div[index].className=g;    
+		                    }
+		                },600)
+		            }else{
+		                x-=100;
+		                navlist_box.style.transition = 'all 0.3s';
+		                navlist_box.style.left = x+'%';
+		                if(index==price){
+		                    index=0;
+		                    fun1()
+		                    navlist_dot_div[index].className=g;
+		                }else{
+		                    index+=1;
+		                    fun1()
+		                    navlist_dot_div[index].className=g;
+		                }
+		                setTimeout(function(){
+		                if(x==-width-100){
+		                    x=-100;
+		                    navlist_box.style.transition='0s all ease';
+		                    navlist_box.style.left=x+'%';  
+		                    index=0;
+		                    fun1()
+		                    navlist_dot_div[index].className=g;    
+		                }
+		            },600)
+		            }
+		        }else{
+		            navlist_box.style.transition='0.3s all ease';
+		            navlist_box.style.margin=0+'px';
+		        }
+		       time=setInterval(fun,3000);
+		   })
+		})('top','lunbo','banner_index','li','','','current',800,7);
 </script>
 </html>
