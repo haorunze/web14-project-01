@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0, user-scalable=0" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<link rel="stylesheet" href="style/inndex.css">
+	<script>
+		var html = document.documentElement;
+		// console.log(html)
+		var wHtml = html.getBoundingClientRect().width;
+		console.log(wHtml)
+		html.style.fontSize = wHtml/6.4+'px'
+		//  font-size = 15px
+		//  分成15份
+	</script>
+</head>
+<body>
+	<div class="box">
+		<div id="focus" class="focus">
+			<div class="lbimg">
+				<ul>
+					<li>
+						<img src="images/index/index-pic_02.jpg" alt="">
+					</li>
+					<li>
+						<img src="images/index/index-pic_02.jpg" alt="">
+					</li>
+					<li>
+						<img src="images/index/index-pic_02.jpg" alt="">
+					</li>
+					<li>
+						<img src="images/index/index-pic_02.jpg" alt="">
+					</li>
+				</ul>
+			</div>
+			<div class="xyd_box">
+				<ul>
+					<li index='1'class="xyd xyd_b"></li>
+					<li index='2'class="xyd "></li>
+					<li index='3'class="xyd "></li>
+					<li index='4'class="xyd "></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script src="js/TouchSlide.1.1.js"></script>
+	<script>
+		TouchSlide({
+		    slideCell: "#focus",
+		    titCell: ".xyd_box ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+		    mainCell: ".lbimg ul",
+		    effect: "left",
+		    autoPlay: true, //自动播放
+		    autoPage: true, //自动分页
+		    titOnClassName: 'xyd_b'
+		});
+	</script>
+</body>
+</html>
