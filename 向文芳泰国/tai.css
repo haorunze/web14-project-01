@@ -1,0 +1,383 @@
+*{
+	margin:0;
+	padding:0;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.flex{
+	display: flex;
+	justify-content: space-between;
+}
+.red{
+	color: #F9665E;
+}
+.orange{
+	color: #FFB001;
+}
+.blue{
+	color: #46BEF0;
+}
+.fff{
+	background: #fff;
+}
+body,a{
+	font-family: Helvetica,"微软雅黑",-apple-system,sans-serif;
+	text-size-adjust: 100%!important;
+    overflow-x: hidden;
+    font-weight: 400;
+    font-size:0.16rem;
+}
+header{
+	font-size: 0;
+	height: .5rem;
+    line-height: .5rem;
+	background: #FFD930;
+}
+header img:first-child{
+	width:1.54rem;
+}
+header img:last-child{
+	width:2.16rem;
+}
+.logo{
+	margin-left: 0.2rem;
+}
+header span{
+	display: inline-block;
+	width: 0.02rem;
+	height: .3rem;
+	background:#000d;
+	vertical-align: .06rem;
+	margin: 0 .1rem;
+}
+/*广告图*/
+.slideBox{ 
+	position:relative; 
+	overflow:hidden; 
+	max-width:6.4rem;/* 设置焦点图最大宽度 */
+	height: 2.22rem;
+ }
+.slideBox .hd{ 
+	position:absolute; 
+	height:.28rem; 
+	line-height:.28rem; 
+	bottom:.2rem; 
+	left:50%;
+	margin-left: -.49rem;
+	z-index:1; 
+}
+.slideBox .hd li{ 
+	display:inline-block; 
+	width:.1rem; 
+	height:.1rem; 
+	-webkit-border-radius:.1rem; 
+	-moz-border-radius:.1rem; 
+	border-radius:.1rem; 
+	background:#333; 
+	text-indent:-9999px;
+	overflow:hidden; 
+	margin:0 .06rem;   
+}
+.slideBox .hd .on{ 
+	background:#fff;  
+}
+.slideBox .bd{ 
+	position:relative; 
+	z-index:0; 
+}
+.slideBox .bd li{ 
+	position:relative; 
+	width: 6.4rem;
+	text-align:center;  
+}
+.slideBox .bd li img{ 
+	display: block;
+	width:100%;
+	height: 2.22rem;
+}
+.slideBox .bd li a{ 
+		-webkit-tap-highlight-color:rgba(0,0,0,0);  
+}  /* 去掉链接触摸高亮 */
+.skz{
+	width:4rem;
+	margin:0 auto;
+	padding:.25rem 0;
+}
+.skz li{
+	text-align: center;
+}
+.skz img{
+	width: .85rem;
+}
+/*详情介绍*/
+.xqjs{
+	background: #EFEFEF;
+	padding-top:.25rem;
+}
+.xqjs img{
+	display: block;
+	width: 100%;
+}
+/*泰国游*/
+.tgy{
+	text-align: center;
+}
+/*.tgy p{
+	margin-top:.15rem;
+}*/
+.tgy .hq{
+	padding-bottom: .28rem;
+	border-bottom: .01rem dashed #B3B3B3;
+}
+.zyx{
+	position: relative;
+	height: 9.7rem;
+	margin-top: .1rem;
+	/*background: url(images/index/index-pic_16.jpg) no-repeat;
+	background-size: 100% 100%;*/
+}
+.zyxnr{
+	position: absolute;
+	top:7.1rem;
+	left: 50%;
+	margin-left:-1rem;
+
+}
+.zyxnr>strong{
+	display: block;
+	padding-top: .2rem;
+}
+.zyxnr>ul{
+	padding-top:.35rem;
+}
+/*同类人*/
+.tlr{
+	
+}
+.tlr p{
+	background: #FEDB35;
+	padding:.3rem 0;
+	font-size:.26rem;
+	text-align: center;
+}
+.tlr p .font{
+	font-size:.3rem;
+}
+/*同类人*/
+.tlrms>ul{
+	width:50%;
+	padding-bottom: .35rem;
+}
+.xqjs .tlrms>ul img{
+	width: 1.13rem;
+	margin:0 auto;
+	padding-top:.15rem;
+}
+.xqjs .tlrms>ul:first-child{
+	position: relative;
+	color:#868686;
+}
+.xqjs .tlrms>ul:first-child::after{
+	content: "";
+	position: absolute;
+	top:.2rem;
+	right: 0;
+	height: 2.3rem;
+	border-right: 1px dashed #C1C1C1;
+}
+.xqjs .tlrms li:first-child{
+	height: .75rem;
+	line-height: .75rem;
+}
+.xqjs .tlrms li{
+	height: .3rem;
+	line-height: .3rem;
+	text-align: center;
+}
+/*住吃玩购车人比*/
+.zh{	
+	
+}
+/*住哪里*/
+.znl{
+	margin-top: .1rem;
+	padding: 0 .2rem .3rem;
+}
+.xqjs .znl h1{	
+	padding: .15rem 0;
+}
+.xqjs .znl i{
+	display: inline-block;
+	margin-right: .1rem;
+	vertical-align: -.03rem;
+ 	background:url(images/index/sprite-index.png) no-repeat;
+ 	background-size: .48rem 4.07rem;	
+}
+.xqjs .znl .znl-img{
+	width: .4rem;
+ 	height: .33rem;
+	background-position: left top;
+}
+.xqjs .znl .csm-img{
+	width: .37rem;
+ 	height: .39rem;
+	background-position: left -.44rem;
+}
+.xqjs .znl .wsm-img{
+	width: .43rem;
+ 	height: .42rem;
+	background-position: left -.96rem;
+}
+.xqjs .znl .gwm-img{
+	width: .47rem;
+ 	height: .4rem;
+	background-position: left -1.62rem;
+}
+.xqjs .znl .smc-img{
+	width: .45rem;
+ 	height: .44rem;
+	background-position: left -2.21rem;
+}
+.xqjs .znl .dsr-img{
+	width: .47rem;
+ 	height: .44rem;
+	background-position: left -2.94rem;
+}
+.xqjs .znl .bbk-img{
+	width: .47rem;
+ 	height: .39rem;
+	background-position: left bottom;
+}
+.znl p{
+	height: .3rem;
+	line-height: .3rem;
+	color:#424242;
+}
+.znl .first{
+	margin-top:.1rem;
+}
+/*扫码*/
+.sm{
+	margin-top:.1rem;
+	text-align: center;
+	padding-bottom: .65rem;
+}
+.sm h1{
+	font-size: .25rem;
+}
+.sm h1,.sm .sg{
+	margin-top: .1rem;
+}
+.sm h1 span{
+	display: inline-block;
+	margin-left:.1rem; 
+	width: 1.9rem;
+	height: .4rem;
+	text-align: center;
+	line-height: .4rem;
+	background: #FFB001;
+	border-radius:.1rem;
+}
+.sm p{
+	height: .3rem;
+	line-height: .3rem;
+}
+/*体验*/
+.ty{
+	width: 100%;
+	height: 3.49rem; 
+	background: url(images/index/index-bg_48.png) no-repeat #222;
+	background-size: 100%;
+}
+.ty h2,.ty h6,.tyms img{
+	margin-top: .25rem;
+}
+.tyms{
+	color:#fff;
+	text-align:center;
+	padding:.35rem 0;
+}
+.ty .cs{
+	color:#F3AF0E;
+	font-size:.3rem;
+}
+.tyms img{
+	width: .31rem;
+	margin-left:1.2rem;
+}
+/*结束*/
+footer{
+	position:fixed;
+	bottom:0;
+	width: 100%;
+	padding: .1rem 0;
+}
+footer ul{
+	width: 5.3rem;
+	margin:0 auto;
+}
+footer a{
+	color: #808080;
+}
+footer i{
+	display: inline-block;
+	background-size: 100%;
+}
+footer li{
+	text-align: center;
+}
+footer .sy i{
+	width: .44rem;
+	height: .41rem;
+	background: url(images/fnav_01.png) no-repeat;
+	background-size: 100%;
+}
+footer .sy:hover i{
+	background: url(images/fnav_01_on.png) no-repeat;
+	background-size: 100%;
+}
+footer .sqtc i{
+	width: .53rem;
+	height: .42rem;
+	background: url(images/fnav_04.png) no-repeat;
+	background-size: 100%;
+}
+footer .sqtc:hover i{
+	width: .49rem;
+	height: .42rem;
+	background: url(images/fnav_04_on.png) no-repeat;
+	background-size: 100%;
+}
+footer .wxzx i{
+	width: .5rem;
+	height: .42rem;
+	background: url(images/fnav_02.png) no-repeat;
+	background-size: 100%;
+}
+footer .wxzx:hover i{
+	width: .5rem;
+	height: .42rem;
+	background: url(images/fnav_02_on.png) no-repeat;
+	background-size: 100%;
+}
+footer .dhzx i{
+	width: .42rem;
+	height: .42rem;
+	background: url(images/fnav_03.png) no-repeat;
+	background-size: 100%;
+}
+footer .dhzx:hover i{
+	width: .42rem;
+	height: .42rem;
+	background: url(images/fnav_03_on.png) no-repeat;
+	background-size: 100%;
+}
+.last{
+	width: 100%;
+	height: .94rem;
+	visibility: hidden;
+}
