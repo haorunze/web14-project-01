@@ -1,0 +1,370 @@
+*{
+	margin:0;
+	padding:0;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+}
+.top{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	width:100%;
+	height:.54rem;
+	background:#FED930;
+}
+.top img{
+	height: .46rem;
+}
+.top_img{
+	border-right:2px solid #907B1C;
+}
+/*图片轮播*/
+.slideBox{ position:relative; width:6.4rem;  height:2.22rem; 
+background-color: #fff; }
+.slideBox .bd{ position:relative; z-index:0; height:222px;}
+.slideBox .bd ul{width:6.4rem;height:222px;}
+.slideBox .bd li{ float:left; width:6.4rem; height:222px; }
+.slideBox .bd li a{width:100%;  height:100%; display: block;}
+.slideBox .bd li img{display: inline-block;width:100%;height:100%;}
+/*中间内容*/
+.section_bg{
+	width:6.4;
+	background:#E7E7E7;
+}
+.content1{
+	background:#fff;
+	width:6.4rem;
+	margin-bottom: .1rem;
+}
+.content1 ul{
+	display: flex;
+	text-align: center;
+	padding:.2rem 0;
+	justify-content:space-between;
+}
+.content1 ul li{
+	width:1.6rem;
+}
+.content1 ul li a{
+	display: block;
+	width:1.6rem;
+	height:1.2rem;
+}
+.content1 ul li img{
+	display:block;
+	width:.83rem;
+	height:.83rem;
+	margin: 0 auto;
+}
+.content1 ul li a span{
+	display:block;
+	font-size:.2rem;
+	margin-top:.1rem;
+}
+.sqwf{
+	color:#F84B32;
+}
+.kdzyx{
+	color:#FDCB47;
+}
+.zxyd{
+	color:#F84630;
+}
+.content2{
+	width:6.4rem;
+	background:#fff;
+}
+.content2 img{
+	display: block;
+	width:100%;
+	height:100%;
+}
+.content3{
+	width:6.4rem;
+	background:#fff;
+}
+.content3 img{
+	display: block;
+	width:100%;
+	height:100%;
+}
+.content_text{
+	text-align: center;
+	height:1.48rem;
+	background:#ffff;
+}
+.content_text p{
+	padding:.08rem;
+	font-size: .16rem;
+	color:#535353;
+}
+.content_text p span:nth-of-type(1){
+	font-weight: bold;
+}
+.content_text p span:nth-of-type(2){
+	color:#E6B82F;
+}
+.content4{
+	position: relative;
+	width:6.4rem;
+	height:9.66rem;
+	background:#fff;
+}
+.content4 img{
+	display: block;
+	height:7.57rem;
+}
+.ljwm{
+	position:absolute;
+	top:66%;
+	left:39%;
+}
+.ljwm span{
+	font-size: .25rem;
+	color:#EB3856;
+}
+.yfz{
+	font-weight: bold;
+}
+.content4_text{
+	font-size: .14rem;
+	text-align: center;
+}
+.kdzyx{
+	font-weight: bold;
+	color:#414141;
+}
+.kdzyx_span{
+	display: block;
+	margin:.08rem 0rem;
+}
+.kdzyx_span p{
+	display: inline-block;
+	font-weight: bold;
+}
+.kdzyx_span span{
+	display: inline-block;
+	font-weight: bold;
+	color:#EB3856;
+}
+.xztlr{
+	width:6.4rem;
+	height:1.18rem;
+	line-height:1.18rem;
+	text-align: center;
+	background:#FEDB35;
+	color:#007ADF;
+	font-size: .3rem;
+	font-style: italic;
+}
+.xztlr span{
+	display: inline-block;
+	font-size: .6rem;
+}
+.xztlr p{
+	display: inline-block;
+	font-weight: bold;
+}
+.no{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background:#fff;
+	color:#0C0C0C;
+	margin-bottom: .1rem;
+}
+.no_div{
+	width:3.1rem;
+	padding:.0rem .2rem;
+	margin:.2rem 0rem;
+}
+.no_div img{
+	display:block;
+	margin:0 auto;
+}
+.no_div p{
+	display: block;
+	font-size: .14rem;
+}
+.no_div_text{
+	border-right:1px dashed #848484;
+	color:#848484;
+}
+.content5{
+	width:6.4rem;
+	background:#fff;
+	margin-bottom:.1rem;
+}
+.content5_center{
+	padding:0 .2rem;
+}
+.content5 h4{
+	font-size: .2rem;
+	color:#393939;
+	padding-left:.1rem;
+
+	margin-bottom: .1rem;
+}
+.content5 h4 i{
+	display: inline-block;
+	width:.41rem;
+	height:.34rem;
+	margin-top:.12rem;
+}
+.content5_i1{
+	background:url(images/index/sprite-index.png)no-repeat 0rem 0rem;
+}
+.content5_i2{
+	background:url(images/index/sprite-index.png)no-repeat 0rem -.47rem;
+}
+.content5_i3{
+	background:url(images/index/sprite-index.png)no-repeat 0rem -.97rem;
+}
+.content5_i4{
+	background:url(images/index/sprite-index.png)no-repeat 0rem -1.69rem;
+}
+.content5_i5{
+	background:url(images/index/sprite-index.png)no-repeat 0rem -2.26rem;
+}
+.content5_i6{
+	background:url(images/index/sprite-index.png)no-repeat 0rem -2.94rem;
+}
+.content5_i7{
+	background:url(images/index/sprite-index.png)no-repeat 0rem -3.63rem;
+}
+.content5_center img{
+	display: inline-block;
+	width:100%;
+	height:100%;
+}
+.content5_center div{
+	padding-bottom: .2rem;
+}
+.content5_center div p{
+	display:block;
+	font-size: .16rem;
+	padding-bottom:.05rem;
+	color:#414141;
+}
+.content6{
+	width:6.4rem;
+	background:#fff;
+}
+.content6 img{
+	display: block;
+	width:100%;
+	height:100%;
+}
+.content7{
+	width:6.4rem;
+	text-align: center;
+	padding:.2rem 0rem;
+	background:#ffff;
+}
+.content7>span{
+	font-size: .2rem;
+	font-weight: bold;
+	display: block;
+	padding-bottom: .1rem
+}
+.content7>p{
+	display: block;
+	font-size: .14rem;
+	padding-bottom: .1rem
+}
+.content7>span>p{
+	display: inline-block;
+	width:1.89rem;
+	height:.4rem;
+	line-height: .4rem;
+	text-align: center;
+	background:#FFB001;
+	border-radius: .03rem;
+	color:#070100;
+}
+.content8{
+	width:6.4rem;
+	background:#fff;
+}
+.content8 img{
+	display: block;
+	width:100%;
+	height:100%;
+}
+/*底部内容*/
+.footer{
+	width:6.4rem;
+	background:#fff;
+}
+.footer>img{
+	display: block;
+	width:100%;
+	height:100%;
+}
+.footer_div{
+	position: relative;
+    padding-top: .3rem;
+    padding-bottom: .6rem;
+    text-align: center;
+    background: #222222;
+    margin-bottom: 1.1rem;
+}
+.footer_div span{
+	display: block;
+	font-size: .2rem;
+	margin-bottom:.2rem;
+	color:#fff;
+}
+.footer_div .col1{
+	font-size: .22rem;
+	color:#EEBF27;
+}
+.footer_div p{
+	display: block;
+	font-size:.16rem;
+	font-style: italic;
+	color:#fff; 
+}
+.footer_div img{
+	display: block;
+	position:absolute;
+	top:2.1rem;
+	left:3.4rem;
+}
+.footer_footer{
+	position: fixed;
+	width:100%;
+	background:#F2F2F2;
+	bottom:0;
+}
+.footer_footer ul{
+	width:100%;
+	display: flex;
+	background:#fff;
+	padding:.2rem 0;
+	margin-bottom:.1rem;
+	justify-content: space-between;
+}
+.footer_footer li{
+	flex:1;
+}
+.footer_footer a{
+	display: block;
+	text-align: center;
+}
+.footer .footer_footer li img{
+	width: .44rem;
+    height: .41rem;
+    display: block;
+    margin: 0 auto;
+}
+.footer_footer li span{
+	display: block;
+	font-size: .16rem;
+	color:#6E6E6E;
+}
