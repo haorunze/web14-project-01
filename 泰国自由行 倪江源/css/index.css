@@ -1,0 +1,335 @@
+@charset 'utf-8';
+/*清除默认样式*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.none{
+	display: none;
+}
+.fixed{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+/*弹性布局,盒子属性*/
+.flex{
+	display: flex;
+}
+.block{
+	display: block;
+}
+.inline-block{
+	display: inline-block;
+}
+.line-center{
+	align-items: center;
+}
+.center{
+	justify-content: center;
+}
+.between{
+	justify-content: space-between;
+}
+/*浮动*/
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+/*文本对齐方式*/
+.text-left{
+	text-align: left;
+}
+.text-right{
+	text-align: right;
+}
+.text-center{
+	text-align: center;
+}
+
+/*正文开始*/
+header{
+	background-color: #fed930;
+	padding: 0.2rem 0.85rem;
+}
+header a{
+	border-right: 1px solid #000;
+	height: 2.3rem;
+	padding-right: 0.25rem;
+}
+header img{
+	height: 2.3rem;
+}
+
+/*轮播图代码*/
+.slideBox{ position:relative; overflow:hidden; margin:0 auto; }
+.slideBox .hd{ position:absolute; height:28px; line-height:28px; bottom:0; right:0; z-index:1; }
+.slideBox .hd li{ display:inline-block; width:5px; height:5px; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; background:#333; text-indent:-9999px; overflow:hidden; margin:0 6px;   }
+.slideBox .hd li.on{ background:#fff;  }
+.slideBox .bd{ position:relative; z-index:0; }
+.slideBox .bd li{ position:relative;  }
+.slideBox .bd li img{ width: 32rem;  height: 11.1rem; }
+.slideBox .bd li a{ -webkit-tap-highlight-color:rgba(0, 0, 0, 0); /* 取消链接高亮 */ }
+.slideBox .bd li .tit{ display:block; width:100%;  position:absolute; bottom:0; text-indent:10px; height:28px; line-height:28px; background:url(images/focusBg.png) repeat-x; color:#fff;   }
+
+/*导航栏换行*/
+nav{
+	padding: 1.25rem 5.75rem;
+	border-bottom: 0.65rem solid #E7E7E7;
+}
+nav img{
+	width: 4.1rem;
+	height: 4.1rem;
+}
+nav a{
+	display: block;
+	text-align: center;
+	font-size: 1rem;
+	font-weight: bolder;
+}
+nav a:nth-of-type(1){
+	color: #F9665E;
+}
+nav a:nth-of-type(2){
+	color: #FFB001;
+}
+nav a:nth-of-type(3){
+	color: #2DB7EF;
+}
+.slideBox>div:nth-of-type(1){
+	height: auto;
+}
+/*正文开始CSS*/
+section>div:nth-of-type(1){
+	height: 7.15rem;
+	width: 100%;
+	background-image: url(../images/index/layout_02.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+.context1{
+	padding-top: 0.7rem;
+	padding-bottom: 1.2rem;
+	border-bottom: 1px dashed #666;
+	margin-bottom: 0.25rem;
+}
+.context1 p{
+	font-size: 0.9rem;
+	text-align: center;
+	padding-top:  0.5rem;
+}
+.context2{
+	font-size: 0.9rem;
+	text-align: center;
+	margin-top: -2rem;
+}
+.context2 h1{
+	font-size: 1.5rem;
+	padding-bottom: 0.5rem;
+	color: #F9665E;
+}
+.context2 div{
+	padding-bottom: 1.1rem;
+}
+.context2 p{
+	padding-bottom: 0.25rem;
+}
+.context3{
+	border-bottom: 0.65rem solid #E7E7E7;
+}
+.context3 .h1{
+	margin-top: 1rem;
+	height: 5.9rem;
+	line-height: 5.9rem;
+	font-size: 1.75rem;
+	text-align: center;
+	color: #007ADF;
+	background-color: #FEDB35;
+}
+.context3 img{
+	width: 5.15rem;
+}
+.context3 div{
+	flex: 1;
+	text-align: center;
+	font-size: 0.9rem;
+}
+.context3 .flex{
+	position: relative;
+	padding-top: 0.6rem;
+	padding-bottom: 1.4rem;
+}
+.context3 p{
+	padding: 0.2rem;
+}
+.context3 .flex:before{
+	content: '';
+	position: absolute;
+	box-sizing: border-box;
+	top: 1.25rem;
+	left: 50%;
+	height: 11.4rem;
+	width: 0.05rem;
+	border-right: 0.05rem dashed #666;
+}
+/*住哪里*/
+.home{
+	font-size: 0.9rem;
+	padding: 0 0.9rem;
+	padding-bottom: 1.25rem;
+	border-bottom: 0.65rem solid #E7E7E7;
+}
+.home i{
+	display: inline-block;
+	width: 2rem;
+	height: 1.65rem;
+	background-image: url(../images/index/sprite-index.png);
+	background-repeat: no-repeat;
+	background-size: 2.4rem 20.35rem;
+	vertical-align: bottom;
+}
+.home .h1{
+	font-weight: bolder;
+	font-size: 1.05rem;
+	padding: 0.9rem 0 0.75rem 0;
+}
+.home img{
+	width: 29.95rem;
+}
+.home p{
+	padding: 0.2rem;
+}
+/*吃什么*/
+.eat i{
+	height: 2rem;
+	background-image: url(../images/index/sprite-index.png);
+	background-repeat: no-repeat;
+	background-size: 2.4rem 20.35rem;
+	background-position: 0 -2.2rem;
+}
+/*玩什么*/
+.player i{
+	height: 2.05rem;
+	background-image: url(../images/index/sprite-index.png);
+	background-repeat: no-repeat;
+	background-size: 2.4rem 20.35rem;
+	background-position: 0 -4.8rem;
+}
+/*购物吗*/
+.shooping i{
+	width: 2.4rem;
+	height: 2.05rem;
+	background-image: url(../images/index/sprite-index.png);
+	background-repeat: no-repeat;
+	background-size: 2.4rem 20.35rem;
+	background-position: 0 -8.15rem;
+}
+/*什么车*/
+.vehicle i{
+	width: 2.25rem;
+	height: 2.25rem;
+	background-image: url(../images/index/sprite-index.png);
+	background-repeat: no-repeat;
+	background-size: 2.4rem 20.35rem;
+	background-position: 0 -11.05rem;
+}
+/*多少人*/
+.people i{
+	width: 2.2rem;
+	height: 2.3rem;
+	background-image: url(../images/index/sprite-index.png);
+	background-repeat: no-repeat;
+	background-size: 2.4rem 20.35rem;
+	background-position: 0 -14.7rem;
+}
+/*比比看*/
+.contrast{
+	padding-bottom: 1.55rem;
+}
+.contrast i{
+	width: 2.3rem;
+	height: 1.9rem;
+	background-image: url(../images/index/sprite-index.png);
+	background-repeat: no-repeat;
+	background-size: 2.4rem 20.35rem;
+	background-position: 0 bottom;
+}
+/*扫描二维码*/
+.erwei{
+	padding: 1rem 0.85rem;
+	padding-bottom: 3.2rem;
+}
+.erwei img{
+	width: 30.25rem;
+	padding-bottom: 0.5rem;
+}
+.erwei p{
+	font-size: 0.9rem;
+}
+.erwei h1{
+	font-size: 1.25rem;
+}
+.erwei h1,.erwei p{
+	padding: 0.25rem;
+}
+.erwei .bg-orange{
+	background-color: #FFB001;
+	border-radius: 0.4rem/0.5rem;
+	padding: 0.5rem 2rem 0.3rem 2rem;
+	margin-left: 0.6rem;
+}
+section>img{
+	width: 100%;
+}
+/*底部*/
+footer{
+	background-color: #EFEFEF;
+}
+footer>img{
+	width: 100%;
+}
+.footer-data{
+	width: 100%;
+	height: 23.2rem;
+	background: #202020 url(../images/index/index-bg_48.png)no-repeat;
+	background-size: 100%;
+	margin-top: -0.05rem;
+}
+.footer-data h1{
+	padding-top: 2.75rem;
+	color: #fff;
+	font-size: 1.5rem;
+	font-weight: 300;
+	line-height: 3rem;
+}
+/*固定栏*/
+aside{
+	width: 100%;
+}
+aside ul{
+	background-color: #fff;
+	border-top: 0.05rem solid #EDEDED;
+	border-bottom: 0.4rem solid #EDEDED;
+}
+aside li{
+	flex: 1;
+	height: 3.4rem;
+	font-size: 0.8rem;
+	text-align: center;
+	padding-top: 0.45rem;
+}
+aside img{
+	width: 1.2rem;
+}
+aside a{
+	color: #666;
+}

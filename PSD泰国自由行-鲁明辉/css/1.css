@@ -1,0 +1,289 @@
+@charset 'UTF-8';
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a{
+	text-decoration:none; 
+}
+.justify-start{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.ml{
+	margin: .3rem;
+}
+.mar{
+	margin:0 4rem 0 4rem;
+}
+/*背景颜色*/
+.bg-yellow{
+	background: #FED930;
+}
+.bg-white{
+	background: white;
+}
+body{
+	background: #e7e7e7;
+}
+/*背景颜色结束*/
+/*字体颜色*/
+/*粉红色*/
+.col{
+	color: #f9665e;
+}
+/*黄色*/
+.col1{
+	color: #ffb001;	
+}
+/*蓝色*/
+.col2{
+	color: #2db7ef;	
+}
+/*红色*/
+.col3{
+	color: #ff2e4d;
+}
+/*黑色*/
+.col4{
+	color:#000;
+}
+.font-16{
+	font-size: 1.2rem;
+}
+/*结束*/
+/*头部*/
+.box{
+	width: 100%;
+	margin-bottom: 1rem;
+}
+.navs{
+	width: 100%;
+}
+.navsimg{
+	height:3rem;
+}
+/*轮播图*/
+.slideBox{ position:relative; width:100%;  height:150px; overflow:hidden; }
+	.slideBox .hd{display:none; position:absolute; height:28px; line-height:28px; bottom:0; right:0; z-index:1; }
+	.slideBox .hd li{ display:inline-block; width:5px; height:5px; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; background:#333; text-indent:-9999px; overflow:hidden; margin:0 6px;   }
+	.slideBox .hd li.on{ background:#fff;  }
+	.slideBox .bd{ position:relative; z-index:0; }
+	.slideBox .bd li{ position:relative;  }
+	.slideBox .bd li img{ width:100%;  height:150px; display:block;   }
+	.slideBox .bd li a{ -webkit-tap-highlight-color:rgba(0, 0, 0, 0); /* 取消链接高亮 */ }
+	.slideBox .bd li .tit{ display:block; width:100%;  position:absolute; bottom:0; text-indent:10px; height:28px; line-height:28px; background:url(images/focusBg.png) repeat-x; color:#fff;   }
+
+/*结束*/
+.recommended{
+	display: flex;
+	justify-content:center;
+	padding: 2rem;
+}
+
+.img{
+	width: 5rem;
+}
+.box1{
+	text-align: center;
+}
+/*中部*/
+.center{
+	width: 100%;
+}
+.centerimg{
+	width: 100%;
+	height: 7rem;
+}
+.centerimg1{
+	width: 100%;
+	height: 20rem;
+}
+.no1{
+	display: flex;
+	flex-direction: column;
+}
+.no1text p{
+	text-align: center;
+}
+.no1text{
+	padding: 1rem;
+	background: #fff;
+}
+.no2{
+	background: #fff;
+	padding-bottom: 1rem; 
+}
+.no2 img{
+	width: 100%;
+	/*height: 5rem;*/
+}
+.no2text{
+	text-align: center;
+	font-size: 1.4rem;
+	margin-top: -2rem;
+	color:#000;
+}
+.mb{
+	margin-bottom: .5rem;
+}
+.font-1{
+	font-size: 1rem;
+}
+.mb-1{
+	margin-bottom: 1rem;
+}
+/*黄色区域文字*/
+.no3{
+	width: 100%;
+	height: 5rem;
+	background: #fedb35;
+	text-align: center;
+	line-height: 5rem;
+	margin-top: 1rem;
+}
+.no3 i{
+	font-size: 1.8rem;
+	font-weight: 400;
+	color: #007adf;
+}
+.no3 h2{
+	display: inline-block;
+}
+.select{
+	display: flex;
+	text-align: center;
+	background: #fff;
+}
+.n-left{
+	flex: 1;
+	padding: 1rem;
+	position: relative;
+}
+.n-left:before{
+	content:' ';
+	width: 1px;
+	height: 11rem;
+	border-right: 1px dotted #ddd;
+	position: absolute;
+	top: 1.5rem;
+	right: 0;
+}
+.n-left p{
+	color: #dadada;
+}
+.n-right{
+	flex: 1;
+	padding: 1rem;
+}
+.sel-img{
+	height: 3rem;
+}
+/*优选精品推荐*/
+
+.you1{
+	padding:0 1rem;
+	margin-top:1rem;
+	background: #fff;
+	padding-bottom: 1rem; 
+}
+.you1 i{
+	display:inline-block;
+	width: 2.4rem;
+	height: 2rem;
+	background: url(../images/index/sprite-index.png);
+	background-size:2.4rem 20.3rem; 
+	vertical-align:bottom;
+}
+.you1 .tubiao{
+	background-position:0 0rem; 
+}
+.you1 .tubiao2{
+	background-position:0 -2.3rem; 
+}
+.you1 .tubiao3{
+	background-position:0 -4.8rem; 
+}
+.you1 .tubiao4{
+	background-position:0 -8.2rem; 
+}
+.you1 .tubiao5{
+	background-position:0 -11.2rem; 
+}
+.you1 .tubiao6{
+	background-position:0 -14.7rem; 
+}
+.you1 .tubiao7	{
+	background-position:0 -18.2rem; 
+}
+.hredp{
+	padding:1rem 0 1rem 0; 
+}
+.you1 img{
+	width: 100%;
+}
+/*.text-wenben p{
+	padding: 0.5rem 0;
+}*/
+.weixin{
+	margin-top: 1rem;
+	background: #fff;
+}
+.weixin img{
+	width: 100%;
+}
+.weixintext{
+	padding: 2rem;
+	text-align: center;
+}
+.weixintext h1{
+	margin:.5rem 0;
+}
+.yeloowblk{
+	background: #FFB001;
+	border-radius:5px;
+	padding: 0 1rem;
+}
+.botm{
+	text-align: center;
+	margin-bottom: 5rem;
+}
+.botm img{
+	width: 100%;
+}
+.botmtext{
+	background: url(../images/index/index-bg_48.png)no-repeat #222222;
+	background-size:100%; 
+	color: #FBFBFB;
+	padding:2rem 1rem;
+}
+.botm h1{
+	
+	margin:1rem 0;
+}
+.jianju{
+	letter-spacing:5px;
+	text-align: center;
+}
+.botmtext img{
+	width: 2rem;
+	margin-left: 2rem;
+}
+.nav{
+	padding:1rem 4rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height:5rem;
+	position: fixed;
+	bottom: 0;
+	background: #fff;
+	text-align: center;
+}
+.nav img{
+	width: 2rem;
+	height: 1.8rem;
+}
