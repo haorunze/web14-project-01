@@ -1,3 +1,275 @@
+
+@charset="utf-8";
+*{
+	font-size:14px;
+	text-decoration:none;
+	list-style:none;
+	margin:0;
+	padding:0;
+}	
+body{
+	background: #F5F5F5;
+	position:relative;
+}
+/*固定定位*/
+.bottom{
+	position: fixed;
+	background: #fff;
+	height:.46rem;
+	width:3.2rem;
+	top:5.22rem;
+	text-align:center;
+	font-size:0;
+	z-index: 1000;
+}
+.bottom span{
+	display:inline-block;
+	padding-top:.3rem;
+	width:0.8rem;
+	font-size:.12rem;
+}
+.bottom span:nth-of-type(1){
+	background: url(images/fnav_01.png) center center no-repeat;
+	background-size:.2rem;
+}
+.bottom span:nth-of-type(2){
+	background: url(images/fnav_04.png) center center no-repeat;
+	background-size:.2rem;
+}
+.bottom span:nth-of-type(3){
+	background: url(images/weixin_logo.jpg) center center no-repeat;
+	background-size:.2rem;
+}
+.bottom span:nth-of-type(4){
+	background: url(images/fnav_03.png) center center no-repeat;
+	background-size:.2rem;
+}
+/*顶部*/
+.top{
+	background: #FED930;
+	height:.46rem;
+	line-height: .50rem;
+}
+.top img{
+	display:inline-block;
+	height:.23rem;
+}
+.top img:nth-of-type(1){
+	border-right:2px solid #C7AA26;
+	padding-right: .05rem;
+	padding-left: .1rem;
+}
+/*轮播*/
+#content{
+	height:.8533rem; 		
+}
+.slideBox{
+	position:relative; 
+	width:100%; 
+	height:1.11rem; 
+	overflow:hidden;
+	top:-.1rem;
+}
+.slideBox .hd{ 
+	position:absolute;
+	height:.28rem; 
+	line-height:28rem; 
+	bottom:0; 
+	right:0;
+	z-index:1;
+}
+.slideBox .hd ul{
+	width:3.2rem;
+	height:.2rem;
+	text-align:center;
+}
+.slideBox .hd li{
+    display:inline-block; 
+    width:0.05rem;
+    height:0.05rem;  
+}
+.slideBox .hd li .on{
+	background:#fff; 
+}
+.slideBox .bd{ 
+	position:relative; 
+	z-index:0;
+}
+.slideBox .bd li{
+ 	position:relative;
+}
+.slideBox .bd li img{ 
+	width:3.2rem; 
+	height:1.11rem; 
+	display:block;  
+}
+.slideBox .bd li a{ 
+	-webkit-tap-highlight-color:rgba(0, 0, 0, 0); /* 取消链接高亮 */ 
+}
+/*主要页*/
+.list{
+	height:1.1rem;
+	background: #fff;
+	text-align:center;
+}
+.list span{
+	display:inline-block;
+	margin-top:.2rem;
+	width:.8rem;
+	height:.2rem;
+	padding-top:.6rem;
+}
+.list span:nth-of-type(1){
+	background: url(images/index/index-bg_05.png)center 0 no-repeat;
+	background-size: .5rem .5rem;
+	color:#FA644B;
+}
+.list span:nth-of-type(2){
+	background: url(images/index/index-bg_07.png)center 0 no-repeat;
+	background-size: .5rem .5rem;
+	color:#FDC945;
+}
+.list span:nth-of-type(3){
+	background: url(images/index/index-bg_09.png)center 0 no-repeat;
+	background-size: .5rem .5rem;
+	color:#3FC1F0;
+}
+/*主要页1*/
+.list_1{
+	margin-top: .1rem;
+	width:3.2rem;
+	height:3.5rem;
+	background: #fff;
+}
+.list_1 img{
+	width:3.2rem;
+}
+.list_1 p{
+	text-align:center;
+}
+/*主要页2*/
+.list_2{
+	position: relative;
+	height:5.3rem;
+	background: #fff;
+}
+.list_2 img{
+	width:3.2rem;
+}
+.list_wrap{
+	position:absolute;
+	width:3.2rem;
+	bottom:.3rem;
+	text-align:center;
+}
+.list_wrap h1{
+	padding-bottom: .1rem;
+}
+.list_wrap p:nth-of-type(1){
+	padding-bottom: .1rem;
+}
+/*主要页3*/
+.list_3{
+	background: #fff;
+}
+.list_3>div{
+	padding-top: .02rem;
+	text-align:center;
+}
+.list_3_wrap>div{
+	width:1.6rem;
+	padding-bottom: .2rem;
+}
+.list_3_wrap p{
+	width:1.6rem;
+	font-size:.12rem;
+	color:#9F9F9F;
+	padding-bottom: .01rem;
+}
+.list_3_wrap div:nth-of-type(2) p{
+	color:#000;
+}
+.list_3 img{
+	width:.8rem;
+	line-height: .45rem;
+}
+/*主要页4*/
+.nva{
+	margin-top: .1rem;
+	background: #fff;
+	padding-left: .1rem;
+	padding-right: .1rem;
+	padding-bottom: .2rem;
+}
+.nva div{
+	color:#777777;
+}
+.nva div:nth-of-type(1){
+	height:.3rem;
+	line-height: .3rem;
+}
+.nva div:nth-of-type(2) img{
+	width:3rem;
+}
+/*主要页5*/
+.nva_1 img{
+	padding-top: .1rem;
+	width:3.2rem;
+}
+.nva_1_wrap{
+	margin-top:-.05rem;
+	padding-top:.2rem;
+	background: #fff;
+	text-align:center;
+}
+.nva_1_wrap h3{
+	font-size:.18rem;
+}
+.nva_1_wrap p{
+	padding:.01rem 0;
+	font-size:.12rem;
+}
+.nva_1_wrap p:nth-of-type(3){
+	font-size:.18rem;
+	font-weight: bolder;
+}
+.nva_1_wrap p:nth-of-type(3) span{
+	display:inline-block;
+	width:1rem;
+	text-align:center;
+	background: #FFB001;
+	border-radius:.05rem;
+	margin-left:.1rem;
+	margin-bottom: .3rem;
+}
+/*主要页6*/
+.nva_2 img{
+	width:3.2rem;
+}
+/*主要页7*/
+.nva_3{
+	margin-top:-.1rem;
+	background:#202020;
+	padding-bottom: .46rem;
+}
+.nva_3 div{
+	text-align:center;
+	color:#E9E9E9;
+	padding:.05rem;
+}
+.nva_3 div:nth-of-type(1){
+	color:#FEB005;
+	font-size:.16rem;
+	padding-top:.3rem;
+	font-weight: bolder;
+}
+.nva_3 div:nth-of-type(5){
+	text-align:center;
+}
+.nva_3 div:nth-of-type(5) img{
+	width:.15rem;
+	margin-left:.8rem;
+=======
 @charset "utf-8";
 /*
 *author:罗永超-KOUOK;
@@ -356,4 +628,5 @@ a{text-decoration:none; outline:none;}
 }
 .text_bottom_box4 div img{
     width:0.44rem;
+
 }
